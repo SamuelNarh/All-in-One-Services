@@ -1,0 +1,45 @@
+
+
+.box>img{
+    width:100%;
+}
+.grid-wrapper{
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+margin-top: 5em;
+}
+
+.box{
+    background-color:#dddddd ;
+    padding: 2px;
+    margin: 20px;
+}
+
+.zone {
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:2px solid #bbb;
+    transition: all 0.3s;
+}
+
+.zone:hover{
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+
+}
+
+.description{
+position:absolute;
+color: #399ed1;
+visibility:hidden;
+transform: translate(100px,-160px);
+opacity: 0;
+}
+
+.zone:hover .description{
+    visibility:visible;
+    cursor: pointer;
+    opacity: 1;
+}

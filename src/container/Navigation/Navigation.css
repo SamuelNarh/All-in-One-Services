@@ -1,0 +1,42 @@
+.Navigation{
+position:fixed;
+top:0;
+background-color: rgb(30, 84, 150);
+width: 100%;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: space-between;
+transition: all 0.3s linear;;
+
+}
+.Navigation:hover{
+    box-shadow:rgba(29, 38, 67, 0.8) 0px 5px 15px, inset rgba(51, 163, 211, 0.15) 0px -10px 20px;
+}
+ul{
+    display: flex;
+    list-style:none;
+}
+
+.items{
+    gap: 20px;
+    padding-right:16px;
+}
+li:hover{
+    cursor: pointer;
+    color: rgb(218, 76, 76);
+}
+
+#logo{
+    width: 80px;
+}
+
+#shopping-cart{
+    width: 30px;
+    color: white;
+}
+
+span{
+    color: rgb(241, 230, 230);
+    position: absolute;
+    top: 0;
+}

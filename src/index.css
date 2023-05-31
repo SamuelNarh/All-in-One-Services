@@ -1,0 +1,10 @@
+body {
+margin: 0;
+font-family: 'Vina Sans', cursive;
+scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
