@@ -1,17 +1,25 @@
-import {React,Component} from "react";
-import Navigation from "./container/Navigation/Navigation";
-import Footer from "./container/Footer/Footer";
-import Home from "./container/Home/Home"
-class App extends Component{
-  render(){
-    return(
-      <div>
-        <Navigation/>
-        <Home/>
-        <Footer/>
-      </div>
-    ) 
-  }
+import React from 'react';
+import './App.css';
+import { Route } from "react-router-dom";
+
+import Homepage from './Pages/Homepage/Homepage';
+
+const Nextpage= () =>(
+  
+
+    <div>
+    <h1> Homepage</h1> 
+    
+    </div>
+)
+
+function App() {
+  return (
+    <div>
+        <Route exact  path="/" component={Homepage} />
+        <Route exact path="shop/hats" component={Nextpage} />
+    </div>
+  );
 }
 
 export default App;
