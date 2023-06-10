@@ -21,10 +21,9 @@ class SignIn extends React.Component{
     try {
         await auth.signInWithEmailAndPassword(email,password);
         this.setState({email:''
-    ,password:''}); 
+            ,password:''}); 
         }
         catch(error){
-            alert('User does not exist in my database')
             console.log(error,"error")
         }
     }
